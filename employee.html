@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>transparent Login Form</title>
+<style type="text/css">
+body{
+margin:0;
+padding:0;
+background-image:url(intran.jpg);
+-webkit-background-size:cover;
+background-size:cover;
+font-family:Mongolian Baiti;
+}
+.tubura{
+	width: 150px;
+	height: 150px;
+	border-radius:50%;
+	top:-50px;
+	left: calc(50%,-50PX);
+	position: absolute;
+
+}
+.form-area{
+        margin:0px;
+        padding:0px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:400px;
+	height:690px;
+	box-sizing:border-box;
+	background:violet;
+	padding:40px;
+	color: #fff;
+}
+h3{
+	margin:0;
+	padding:0 0 20px;
+	font-weight:italic;
+	color:sienna;
+	font-size:30px;
+	font-weight:initial;
+}
+.form-area input,select{
+	margin-bottom:20px;
+	width:80%;
+}
+.form-area input[type="text"],
+ .form-area input[type="password"]{
+   border:none;
+	border-bottom:1px solidd#cccccc;
+	background-color:unset;
+	outline:none;
+	height:40px;
+		top: 50PX;
+	left: arc(-50%,-50px);
+border-radius:20px;
+}
+::placeholder{
+color:blue;
+}.form-area select{
+	margin-top:20px;
+	padding:10px 0;
+	font-size: 40px;
+	font-family: elephant;
+}
+.form-area input[type="button"]
+{
+	border:none;
+	outline: none;
+	height: 40px;
+	background:orange;
+	color:green;
+	font-size:28px;
+	font-family: aligerian;
+	border-radius:30px;
+}
+.form-area input[type=submit]:hover{
+	background-color:orange;
+	color:#ccc405;
+}
+.form-area a{
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+font-weight:bold;}
+.form-area a:hover{
+	background-color:green;
+	size:20px;
+}
+
+</style>
+</head>
+<body>
+<div class="form-area">
+<img src="tubura.jpg" class="tubura">
+<h3 title="register the new employee and save him/her, please dont leave space without entering data needed" style="color:blue"><br><br>register new employee</h3>
+<form action="employee.php" method="post">
+idnumber:
+<input type="text" name="id" id="idnumber" placeholder="Please id of your number">
+firstname:
+<input type="text" name="firstname" id="firstname" placeholder="Please nter First name"><br/>
+lastname:
+<input type="text" name="lastname" id="lastname" placeholder="Please nter Last name"><br/>
+identity:
+<input type="text" name="identity" id="identity" placeholder="Please nter Identity number"><br/>
+address:
+<input type="text" name="address" id="address" placeholder=" input address"><br/>
+phone:
+<input type="text" name="phone" id="phone" placeholder="Please nter phone number"><br/>
+email:
+<input type="text" name="email" id="email" placeholder="e-mail"><br/>
+<input type="submit" name="submit" value="register"></br>
+</form></div>
+</body>
+</head>
+<a href="navigation.html">Back to HOME PAGE</a>
+</html>

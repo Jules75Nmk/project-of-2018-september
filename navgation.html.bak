@@ -1,0 +1,91 @@
+<!doctype html>
+<html><head><title>Navigation</title>
+<style type="text/css">
+.navigation{
+
+}
+body {
+background:url(xx.jpg)no-repeat;
+background-size:cover;
+font-family:Yu Gothic UI Semilight;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	font-size: 80px;
+}
+ul li{
+	float: left;
+	width:160px;
+	height:50px;
+	background-color:indigo;
+	opacity: .8;
+	line-height:50px;
+	text-align: center;
+	font-size:25px;
+	margin-right:1px;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	display: block;
+	font-weight: uppercase;
+}
+ul li a:hover{
+	background-color:blue;
+}
+ul li ul li{
+	display: none;
+}
+ul li:hover ul li{
+	display: block;
+}
+</style>
+</head>
+<body>
+<div class="navigation">
+<ul><i>
+	<li><a href="#">HOME</a>
+<ul>
+<li><a href="user.html">user</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="contact.html">contact Us</a></li></ul>
+</li>
+<li><b><a href="#">Forms</a>
+<ul>
+	<li><a href="client.html">Client</a></li>
+<li><a href="product.html">Product</a></li>
+</ul>
+</li>
+<li><a href="#">Querry</a>
+<ul>
+<li><a href="new employee.html">new emp</a></li>
+<li><a href="deleteclient.php">Delete client</a></li>
+<li><a href="update.html">Update</a></li></ul>
+</li>
+</li>
+<li><a href="#">report</a>
+	<ul>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li></ul></li>
+<li><a href="#">INFORMED</a>
+	<ul>
+	<li><a href="slider.html">View Info</a></li>
+	<li><a href="anouncement.html">Anouncements</a></li>
+	</ul>
+</li>
+<li><a href="#">NEED HELP?</a>
+<ul>
+<li><a href="searchclient.html">search client</a></li>
+<li><a href="searchproduct.html">product</a></li>
+<li><a href="#">employee</a></li>
+<li><a href="#">Log out</a></li>
+</ul>
+</li>
+</li>
+</b>
+<i>
+</ul></div>
+</body>
+</HTML>

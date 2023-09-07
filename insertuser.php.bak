@@ -1,0 +1,19 @@
+<?php
+$link= mysql_connect("localhost","root","");
+mysql_select_db("project",$link);
+$a=$_POST['ID'];
+$x=$_POST['USER_TYPE'];
+$b=$_POST['USERNAME'];
+$c=$_POST['PASSWORD'];
+if($submit);
+{
+$link=mysql_query("insert into user values('','$x','$b','$c')");
+if($link)
+	{
+echo"record has been saved!";
+	}
+	else{
+echo"record not saved";
+}
+}
+?>

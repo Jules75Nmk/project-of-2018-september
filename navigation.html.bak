@@ -1,0 +1,93 @@
+<!doctype html>
+<html><head><title>Navigation</title>
+<style type="text/css">
+.navigation{
+
+}
+body {
+background:url(nature.jpg)no-repeat;
+background-size:cover;
+font-family:Century;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	font-size: 80px;
+}
+ul li{
+	float: left;
+	width:160px;
+	height:50px;
+	background-color:#4000ff;
+	opacity: .8;
+	line-height:50px;
+	text-align: center;
+	font-size:25px;
+	margin-right:1px;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	display: block;
+	font-weight: uppercase;
+}
+ul li a:hover{
+	background-color:rgb(0, 128, 255);
+}
+ul li ul li{
+	display: none;
+}
+ul li:hover ul li{
+	display: block;
+}
+</style>
+</head>
+<body>
+<div class="navigation">
+<ul><i>
+	<li><a href="#">HOME</a>
+<ul>
+<li><a href="user.html">login</a></li>
+<li><a href="new employee.html">AddNew emp</a></li>
+<li><a href="contact.html">contact Us</a></li></ul>
+</li>
+<li><b><a href="#">Forms</a>
+<ul>
+	<li><a href="client.html">Add Client</a></li>
+<li><a href="product.html">Add Product</a></li>
+</ul>
+</li>
+<li><a href="#">Querry</a>
+<ul>
+<li><a href="deleteclient.php">Delete client</a></li>
+<li><a href="deleteproduct.php">DelProduct</a></li>
+<li><a href="updateclient.html">update client</a></li></ul>
+</li>
+</li>
+<li><a href="#">report</a>
+	<ul>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li></ul></li>
+<li><a href="#">INFORMED</a>
+	<ul>
+	<li><a href="slider.html">View Info</a></li>
+	<li><a href="anouncement.html">Anouncements</a></li>
+	</ul>
+</li>
+<li><a href="#">HELP?</a>
+<ul>
+<li><a href="searchclient1.html">search client</a></li>
+<li><a href="searchproduct.html">product</a></li>
+<li><a href="#">employee</a></li>
+<li><a href="logout.php">Log out</a></li>
+</ul>
+</li>
+</li>
+</b>
+<i>
+</ul></div><b><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&copy; 2018&nbsp;&nbsp;&nbsp;Designed by Jules NTIHEMUKA</b>
+</body>
+
+</HTML>

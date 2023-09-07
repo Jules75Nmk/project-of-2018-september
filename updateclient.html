@@ -1,0 +1,52 @@
+<?php
+$host="localhost"; // Host name
+$username="root"; // Mysql username
+$password=""; // Mysql password
+$db_name="project"; // Database name
+$tbl_name="client"; // Table name
+
+// Connect to server and select database.
+mysql_connect("$host", "$username", "$password")or die("cannot connect");
+mysql_select_db("mobisol")or die("cannot select DB");
+
+// get value of Id that sent from address bar
+$clientid=$_GET['clientid'];
+// Retrieve data from database
+$sql="SELECT * FROM $tbl_name";
+$result=mysql_query($sql);
+?>
+<body background="white"><br><br><br><br><br><br><br><br><center><font size= "50">
+<table width="800" border="0" cellspacing="4" cellpadding="4">
+<tr>
+<td>
+<table width="800" border="1" cellspacing="0" cellpadding="3"bgcolor="0,0,90">
+<tr>
+<td colspan="10"><strong><center><I><B>List data from client table</B></I></center></strong> </td>
+</tr>
+<tr>
+<td align="center"><strong>clientid</strong></td>
+<td align="center"><strong>firstname</strong></td>
+<td align="center"><strong>lastname</strong></td>
+<td align="center"><strong>sex</strong></td>
+<td align="center"><strong>address</strong></td>
+<td align="center"><strong>phone</strong></td>
+</tr>
+<?php
+while($rows=mysql_fetch_array($result)){
+?>
+<tr>
+<td><? echo $rows['clientid'];?></td>
+<td><? echo $rows['firstname'];?></td>
+<td><? echo $rows['lastname'];?></td>
+<td><? echo $rows['sex'];?></td>
+<td><? echo $rows['address'];?></td>
+<td><? echo $rows['phone'];?></td>
+<td align="center"><a href="updateclient1.php?id=<? echo $rows['clientid']; ?>"><input type='button'value='update'></a></td>
+</tr>
+<?php
+}
+?>
+</table>
+</td>
+</tr>
+</table></font></body></html>

@@ -1,0 +1,68 @@
+<center>
+<style type="text/css">
+A:link{
+text-decoration:none;
+}
+</style>
+<?php
+include("connect.php");
+$host="127.0.0.1"; // Host name
+$username=""; // Mysql username
+$password=""; // Mysql password
+$db_name="project"; // Database name
+$tbl_name="client"; // Table name
+
+// Connect to server and select database.
+//mysql_connect("$host", "$username", "$password")or die("cannot connect");
+//mysql_select_db("$db_name")or die("cannot select DB");
+
+$sql="SELECT * FROM $tbl_name";
+$result=mysql_query($sql);
+?>
+<body background="back14.JPG">
+<table width="1000" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td>
+<table width="1100" border="1" cellspacing="0" cellpadding="3"bgcolor="#ffc107">
+<tr>
+<td colspan="10"><strong><center>List data from client table</center> </strong> </td>
+</tr>
+
+<tr>
+<td align="center"><strong>clientid</strong></td>
+<td align="center"><strong>firstname</strong></td>
+<td align="center"><strong>lastname</strong></td>
+<td align="center"><strong>sex</strong></td>
+<td align="center"><strong>address</strong></td>
+<td align="center"><strong>phone</strong></td>
+<td align="center"><strong>Action</strong></td>
+
+
+
+</tr>
+<?php
+while($rows=mysql_fetch_array($result)){
+?>
+<tr>
+<td><? echo $rows['clientid']; ?></td>
+<td><? echo $rows['firstname']; ?></td>
+<td><? echo $rows['lastname']; ?></td>
+<td><? echo $rows['sex']; ?></td>
+<td><? echo $rows['address']; ?></td>
+<td><? echo $rows['phone']; ?></td>
+<td align="center"><a href="updateclient1.php?clientid=<? echo $rows['clientid']; ?>"><input type='button'value='update'></a></td>
+</tr>
+<?php
+}
+?>
+</table>
+</td>
+</tr>
+</table></body>
+<br><br>
+<center><?php
+mysql_close();
+echo"<a href=\"javascript:window.print();\">Print This Page</a>";
+?><br><br>
+<a href="navigation.html">BACK</a>
+</center>

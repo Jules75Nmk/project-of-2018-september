@@ -1,0 +1,54 @@
+<?php
+$host="localhost"; // Host name
+$username="root"; // Mysql username
+$password=""; // Mysql password
+$db_name="project"; // Database name
+$tbl_name="client"; // Table name
+
+// Connect to server and select database.
+mysql_connect("$host", "$username", "$password")or die("cannot connect");
+mysql_select_db("mobisol")or die("cannot select DB");
+
+// get value of Id that sent from address bar
+$clientid=$_GET['clientid'];
+// Retrieve data from database
+$sql="SELECT * FROM $tbl_name";
+$result=mysql_query($sql);
+?>
+<body bgcolor="orange"><br><br><br><br><br><br><br><br><center><font size= "50">
+<table width="800" border="0" cellspacing="4" cellpadding="4">
+<tr>
+<td>
+<table width="1000" border="1" cellspacing="0" cellpadding="3"bgcolor="#fff">
+<tr>
+<td colspan="10"><strong><center><I><B>List data from product table</B></I></center></strong> </td>
+</tr>
+<tr>
+<td align="center"><strong>Id</strong></td>
+<td align="center"><strong>Name</strong></td>
+<td align="center"><strong>Quantity</strong></td>
+<td align="center"><strong>Price</strong></td>
+<td align="center"><strong>Paidmoney</strong></td>
+<td align="center"><strong>clientid</strong></td>
+<td align="center"><strong>Date</strong></td>
+</tr>
+<?php
+while($rows=mysql_fetch_array($result)){
+?>
+<tr>
+<td><? echo $rows['Id'];?></td>
+<td><? echo $rows['Name'];?></td>
+<td><? echo $rows['Quantity'];?></td>
+<td><? echo $rows['Price'];?></td>
+<td><? echo $rows['Paidmoney'];?></td>
+<td><? echo $rows['clientid'];?></td>
+<td><? echo $rows['Date'];?></td>
+<td align="center"><a href="updateproduct.php?id=<? echo $rows['clientid']; ?>"><input type='button'value='update'></a></td>
+</tr>
+<?php
+}
+?>
+</table>
+</td>
+</tr>
+</table></font></body></html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first style sheet</title>
+
+<body>
+<p>Hey visitor,You're wel come<br>
+We're located on the street of Rubengera kagarama<br>
+so,The available products in this company are as follows:
+o	Trees</br>
+o	Maize</br> 
+o	Lamps<br>
+o	Chickens and manures<br>
+It shares the different agriculture products as they stated above to their clients<br>
+okay, & if you want contact us<br> on the following e-mail:</br><br><a href="#">Tubura@gmail.com</a> </p>
+<link rel="stylesheet" type="text/css" href="external.css">
+All right!
+</body>
+<style type="text/css">
+	color: sienna;
+}
+p{text-align: center;
+	background-color:transparent;
+	color:blue;
+	padding:20 50 0px;
+	margin:50px;
+	font-size: 40px;
+	font-family:b;
+}
+body{
+	background-image: url(shutterstock_131308886.jpg);
+	background-size: cover;
+	text-align: center;
+	color:#aeae;
+	font-size:45px;
+	font-family:arial;
+	font-weight: italic;
+	;}
+	h1{
+	;
+	}
+	</style>
+</head>
+</html>

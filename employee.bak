@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>transparent Login Form</title>
+<style type="text/css">
+body{
+margin:0;
+padding:0;
+background-image:url(Wallpaper-Desktop-7.jpg);
+-webkit-background-size:cover;
+background-size:cover;
+font-family:elephant;
+}
+.tubura{
+	width: 150px;
+	height: 150px;
+	border-radius:50%;
+	top:-50px;
+	left: calc(50%,-50PX);
+	position: absolute;
+
+}
+.form-area{
+        margin:0px;
+        padding:0px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:400px;
+	height:650px;
+	box-sizing:border-box;
+	background:rgba(0,0,0,0.5);
+	padding:40px;
+	color: #fff;
+}
+h3{
+	margin:0;
+	padding:0 0 20px;
+	font-weight:italic;
+	color:sienna;
+	font-size:30px;
+	font-weight:initial;
+}
+.form-area input,select{
+	margin-bottom:20px;
+	width:100%;
+}
+.form-area input[type="text"],
+ .form-area input[type="password"]{
+   border:none;
+	border-bottom:1px solidd#ffffff;
+	background-color:unset;
+	outline:none;
+	height:40px;
+		top: 50PX;
+	left: arc(-50%,-50px);
+border-radius:20px;
+}
+::placeholder{
+color:blue;
+}.form-area select{
+	margin-top:20px;
+	padding:10px 0;
+	font-size: 40px;
+	font-family: elephant;
+}
+.form-area input[type="button"]
+{
+	border:none;
+	outline: none;
+	height: 40px;
+	background:orange;
+	color:green;
+	font-size:28px;
+	font-family: aligerian;
+	border-radius:30px;
+}
+.form-area input[type=submit]:hover{
+	background-color:orange;
+	color:#ccc405;
+}
+.form-area a{
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+font-weight:bold;}
+.form-area a:hover{
+	background-color:green;
+	size:20px;
+}
+
+</style>
+</head>
+<body>
+<div class="form-area">
+<img src="tubura.jpg" class="tubura">
+<h3 title="register the new employee and save him/her, please dont leave space without entering data needed" style="color:blue"><br><br>register new employee</h3>
+<form action="savenewemployee.php">
+firstname:
+<input type="text" maxlength="25" name="firstname" id="firstname" placeholder="Please nter First name">
+lastname:
+<input type="text" maxlength="20" name="lastname" id="lastname" placeholder="Please nter Last name">
+identity:
+<input type="text" maxlength="16" name="identity" id="identity" placeholder="Please nter Identity number">
+address:
+<input type="text" maxlength="25" name="address" id="address" placeholder=" input address">
+phone:
+<input type="text" maxlength="16" name="phone" id="phone" placeholder="Please nter phone number">
+<button  title="save new client!" >SAVE</button></br>
+</form></div></body></head></html>

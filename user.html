@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Login Form</title>
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;
+background: url(kkk.jpg)no-repeat;
+background-size:cover;
+background-position:left;
+font-family: Cooper Black;
+color:yellow;
+}
+form{
+float:left;
+}
+.loginbox{
+	width:250px;
+	height:580px;
+	background:transparent;
+	color:blue;
+	top: 50%;
+	left: 50%;
+	position:absolute;
+	transform: translate(50,50);
+	box-sizing: border-box;
+}
+.1{
+	width:20px;
+	height:25px;
+	border-radius:20%;
+	position: absolute;
+	top:20px;
+	left: calc(20%,20px);
+}
+.h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px; 
+}
+.loginbox{
+	margin: 10;
+	padding: 0;
+	font-weight:italic;
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"]
+{
+	border:2px;
+	border-bottom: 1px solid yellow;
+	background:transparent; 
+	outline: none;
+	height: 40px;
+	color:black;
+	font-size: 25px;
+}
+.loginbox input[type="submit"]
+{
+	border:none;
+	outline: none;
+	height:35px;
+	background: #fb2525;
+	color: #fff;
+	font-size:2px
+	border-radius:18px;
+}
+.loginbox input[type="submit"]:hover{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.loginbox a:hover{
+	color: #ffc107;
+}
+
+</style>
+</head>
+<body><H1><marquee behavior="alternate"><font color="violet" face="Wide Latin">User Security Login Form</font></marquee></H1>
+	<div class="loginbox">
+		<img src="images (5).jpg" class="1">
+		<h1><b><i>LOGIN HERE!</i></b></h1>
+		<form action="user2.php" method="POST">
+<br>
+username:<input type="text" name="username" placeholder="User name" maxlength="15"></br>
+password:<input type="password" name="password" placeholder="Enter password"></br>
+<input type="submit" name="submit" value="login"onclick="alert('Click ok to open the system!')">
+<input type="reset" value="Refresh"onclick="alert('Are you sure ,you want to refresh?')" />
+&copy;<font color="#FF9900">N.Jules </font>
+</form>
+</div>
+</body>
+</html>

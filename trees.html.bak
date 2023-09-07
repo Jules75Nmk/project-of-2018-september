@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url(137803.jpg);
+	font-family: timesnewroman;
+	text-align: center;
+
+}
+.title{
+	text-align: center;
+	padding: 30px 10px;
+	font-weight: bold;
+}
+.title h1{
+	margin:0px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size:35px;
+	font-family: Constantia;
+	color: chocolate;
+}
+.container{
+	width: 50%;
+	height: 400px;
+	background: #fff;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	box-shadow: 0 15px 40px rgba(0,0,0,.5);
+}
+.container .left{
+	float: left;
+	width: 50%;
+	height: 400px;
+	background: url(RWANDA COAT.jpg);
+	background-size: cover;
+	box-sizing: border-box;
+}
+.container .right{
+	float: right;
+	width: 50%;
+	height: 400px;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.formbox{
+	width: 100%;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	height: 400px;
+	background: #fff;
+}
+.formbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color:indigo;
+}
+.formbox input{
+	margin-bottom: 20px;
+}
+.formbox input [type="text"],input [type="password"]{
+	border: none;
+	border-bottom: 2px solid #a6af13;
+	outline: none;
+	font-family: elephant;
+	width: 100px;
+	top: 50px;
+	border-radius: 30px;
+	left: arc(50px,50px);
+}
+.formbox input [type="text"],input [type="password"]:focus{
+	border-bottom: 2px solid #262626;
+}
+.formbox input [type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	background:#262626;
+	cursor: pointer;
+}
+.formbox input [type="submit"]:hover{
+	background: #a6af13;
+}
+.formbox a{
+	color: #262626;
+	font-size: 12px;
+	font-weight: bold;
+}
+</style>
+<meta charset="utf-8">
+	<title>Login Form</title>
+<link rel="stylesheet" type="text/css" href="trees.css">
+</head>
+<body>
+<div class="title"><h1>The're nice trees!....</h1>
+<div class="container">
+<div class="left">
+<div class="rightt">
+<div class="formbox">
+<form action="submit.php" method="post">
+<form>
+	<p>user name</p>
+	<input type="text" name="user" placeholder="user names">
+		<p>password</p>
+	<input type="password" name="pwd" placeholder="enter your password"><br><br>
+<P>please full fill Dates!<p>
+<input type="date" id="namebox"/><br>
+	<button>submit</button><br>
+	<a href="#">forget password of yours?</a><br>
+	<a href="#">need ahelp?</a>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

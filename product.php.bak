@@ -1,0 +1,22 @@
+<?php
+$link= mysql_connect("localhost","root","");
+mysql_select_db("project",$link);
+$x=$_POST['Id'];
+$xa=$_POST['Name'];
+$ss=$_POST['Quantity'];
+$xc=$_POST['Price'];
+$xd=$_POST['Paidmoney'];
+$xe=$_POST['clientid'];
+$xf=$_POST['Dates'];
+if($submit);
+{
+$link=mysql_query("insert into product values('','$xa','$ss','$xc','$xd','$xe','$xf')");
+if($link)
+	{
+echo"record has been saved!";
+	}
+	else{
+echo"record not saved";
+}
+}
+?>
